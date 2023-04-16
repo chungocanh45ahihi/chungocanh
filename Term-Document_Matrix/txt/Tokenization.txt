@@ -1,0 +1,29 @@
+How to Get Started with NLP – 6 Unique Methods to Perform Tokenization
+
+Overview
+    Looking to get started with Natural Language Processing (NLP)? Here’s the perfect first step
+    Learn how to perform tokenization – a key aspect to preparing your data for building NLP models
+    We present 6 different ways to perform tokenization on text data
+
+Introduction
+
+Are you fascinated by the amount of text data available on the internet? Are you looking for ways to work with this text data but aren’t sure where to begin? Machines, after all, recognize numbers, not the letters of our language. And that can be a tricky landscape to navigate in machine learning.
+So how can we manipulate and clean this text data to build a model? The answer lies in the wonderful world of Natural Language Processing (NLP).
+Solving an NLP problem is a multi-stage process. We need to clean the unstructured text data first before we can even think about getting to the modeling stage. Cleaning the data consists of a few key steps:
+    Word tokenization
+    Predicting parts of speech for each token
+    Text lemmatization
+    Identifying and removing stop words, and much more.
+
+In this article, we will talk about the very first step – tokenization. We will first see what tokenization is and why it’s required in NLP. We will then look at six unique ways to perform tokenization in Python.
+
+Table of Contents
+    What is Tokenization in NLP?
+    Why is tokenization required?
+    Different Methods to Perform Tokenization in Python
+        Tokenization using Python split() Function
+        Tokenization using Regular Expressions
+        Tokenization using NLTK
+        Tokenization using Spacy
+        Tokenization using Keras
+        Tokenization using Gensim

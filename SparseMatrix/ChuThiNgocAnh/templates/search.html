@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Search Example</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="./css/index.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Word Count</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('index') }}">Upload Folder <span class="sr-only">(current)</span></a>
+            
+            </li>
+            <li class="nav-item">
+          
+              <a class="nav-link" href="{{ url_for('search') }}">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{{ url_for('tudien') }}">Dict</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+      <div class="bw-input-search" style="margin-left: 20px; width: 100%;">
+      <h1>Search</h1>
+   
+    <form action="/search" method="POST">
+        <div class="bw-input-search-radio" style="justify-self: start; ">
+        <input type="radio" id="search" name="searchType" value="search" checked>
+        <label for="search">Search</label><br>
+        <input type="radio" id="searchAnd" name="searchType" value="searchAnd">
+        <label for="searchAnd">Search And</label><br>
+        <input type="radio" id="searchOr" name="searchType" value="searchOr">
+        <label for="searchOr">Search Or</label><br>
+        <input type="radio" id="andNot" name="searchType" value="andNot">
+        <label for="andNot">And Not</label><br>
+        <input type="radio" id="orNot" name="searchType" value="orNot">
+        <label for="orNot">Or Not</label><br>
+        </div>
+        <br>
+        <label for="searchText">Search Text:</label><br>
+        <input type="text" id="searchText" name="searchText"><br>
+        <div id="searchText2" style="display: none;">
+            <br>
+            <label for="searchText2">Search Text 2:</label><br>
+            <input type="text" id="searchText2" name="searchText2"><br>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <div id="searchResult">
+        <h2>Search Results:</h2>
+        <ul>
+            <li>{{ search_results }}</li>
+        </ul>
+    </div>
+ </div>
+    <script>
+        const searchAnd = document.getElementById("searchAnd");
+        const searchOr = document.getElementById("searchOr");
+        const andNot = document.getElementById("andNot");
+        const orNot = document.getElementById("orNot");
+
+        const searchText2 = document.getElementById("searchText2");
+
+        searchAnd.addEventListener("click", () => {
+            searchText2.style.display = "block";
+        });
+
+        searchOr.addEventListener("click", () => {
+            searchText2.style.display = "block";
+        });
+
+        andNot.addEventListener("click", () => {
+            searchText2.style.display = "block";
+        });
+
+        orNot.addEventListener("click", () => {
+            searchText2.style.display = "block";
+        });
+
+        search.addEventListener("click", () => {
+            searchText2.style.display = "none";
+        });
+    </script>
+</body>
+</html>

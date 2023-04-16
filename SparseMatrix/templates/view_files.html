@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>View Files</title>
+  </head>
+  <body>
+    <h1>View Files</h1>
+    {% if files %}
+      <ul>
+        {% for file in files %}
+          <li>
+            <h3>{{ file.name }}</h3>
+            <pre>{{ file.content }}</pre>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No files found.</p>
+    {% endif %}
+  </body>
+</html>

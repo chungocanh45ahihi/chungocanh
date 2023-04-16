@@ -1,0 +1,36 @@
+/
+https://m.baomoi.com/bao-mat/t/16541557.epi 1
+/bao-mat/t/16541557.epi 4
+/235-trieu-tai-khoan-instagram-tiktok-youtube-vua-bi-lo/c/36096063.epi 8
+/235-trieu-tai-khoan-instagram-tiktok-youtube-vua-bi-lo/c/36096063.epi 8
+/tap-chi-tri-thuc-truc-tuyen/p/119.epi 9
+/bao-mat/t/16541557.epi 4
+/235-trieu-tai-khoan-instagram-tiktok-youtube-vua-bi-lo/c/36096063.epi 8
+/cach-bao-mat-du-lieu-sieu-nhanh-tren-dien-thoai/c/36064694.epi 2
+/cach-bao-mat-du-lieu-sieu-nhanh-tren-dien-thoai/c/36064694.epi 2
+/chuyen-trang-ky-nguyen-so-bao-phap-luat-tp-hcm/p/331.epi 7
+/bao-mat/t/16541557.epi 4
+/cach-bao-mat-du-lieu-sieu-nhanh-tren-dien-thoai/c/36064694.epi 2
+/phat-hien-mot-loi-tren-instagram-co-the-khien-nhieu-nguoi-lo-lang/c/36040934.epi 3
+/phat-hien-mot-loi-tren-instagram-co-the-khien-nhieu-nguoi-lo-lang/c/36040934.epi 3
+/tap-chi-saostar/p/329.epi 0
+/bao-mat/t/16541557.epi 4
+/phat-hien-mot-loi-tren-instagram-co-the-khien-nhieu-nguoi-lo-lang/c/36040934.epi 3
+/mot-so-bien-phap-tang-cuong-bao-mat-cho-he-thong-camera-gia-dinh/c/36018532.epi 5
+/mot-so-bien-phap-tang-cuong-bao-mat-cho-he-thong-camera-gia-dinh/c/36018532.epi 5
+/bao-quan-doi-nhan-dan/p/16.epi 6
+/bao-mat/t/16541557.epi 4
+/mot-so-bien-phap-tang-cuong-bao-mat-cho-he-thong-camera-gia-dinh/c/36018532.epi 5
+PS D:\IR\Term-Document_Matrix> python sql.py ------------------------
+/tap-chi-saostar/p/329.epi 0 1
+/tap-chi-tri-thuc-truc-tuyen/p/119.epi 9 1
+https://m.baomoi.com/bao-mat/t/16541557.epi 1 1
+/cach-bao-mat-du-lieu-sieu-nhanh-tren-dien-thoai/c/36064694.epi 2 3
+/phat-hien-mot-loi-tren-instagram-co-the-khien-nhieu-nguoi-lo-lang/c/36040934.epi 3 3
+/bao-mat/t/16541557.epi 4 5
+/mot-so-bien-phap-tang-cuong-bao-mat-cho-he-thong-camera-gia-dinh/c/36018532.epi 5 3
+/bao-quan-doi-nhan-dan/p/16.epi 6 2
+/chuyen-trang-ky-nguyen-so-bao-phap-luat-tp-hcm/p/331.epi 7 2
+/
+/235-trieu-tai-khoan-instagram-tiktok-youtube-vua-bi-lo/c/36096063.epi 8 3
+PS D:\IR\Term-Document_Matrix> python sql.py ------------------------

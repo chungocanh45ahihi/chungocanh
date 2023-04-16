@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <title>Search Example</title>
+</head>
+<body>
+    <h1>Search</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Upload Folder</a></li>
+        <li><a href="{{ url_for('search') }}">Search</a></li>
+        <li><a href="{{ url_for('tudien') }}">Dict</a></li>
+      </ul>
+    </nav>
+    <form action="/search" method="POST">
+        <input type="radio" id="search" name="searchType" value="search" checked>
+        <label for="search">Search</label><br>
+        <input type="radio" id="searchAnd" name="searchType" value="searchAnd">
+        <label for="searchAnd">Search And</label><br>
+        <input type="radio" id="searchOr" name="searchType" value="searchOr">
+        <label for="searchOr">Search Or</label><br>
+        <input type="radio" id="andNot" name="searchType" value="andNot">
+        <label for="andNot">And Not</label><br>
+        <input type="radio" id="orNot" name="searchType" value="orNot">
+        <label for="orNot">Or Not</label><br>
+        <br>
+        <label for="searchText">Search Text:</label><br>
+        <input type="text" id="searchText" name="searchText"><br>
+        <div id="searchText2" style="display: none;">
+            <br>
+            <label for="searchText2">Search Text 2:</label><br>
+            <input type="text" id="searchText2" name="searchText2"><br>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <div id="searchResult">
+        <h2>Search Results:</h2>
+        <ul>
+            <li>{{ search_results }}</li>
+        </ul>
+    </div>
+    
+    <script>
+        const searchAnd = document.getElementById("searchAnd");
+        const searchOr = document.getElementById("searchOr");
+        const andNot = document.getElementById("andNot");
+        const orNot = document.getElementById("orNot");
+
+        const searchText2 = document.getElementById("searchText2");
+
+        searchAnd.addEventListener("click", () => {
+            searchText2.style.display = "block";
+        });
+
+        searchOr.addEventListener("click", () => {
+            searchText2.style.display = "block";
+        });
+
+        andNot.addEventListener("click", () => {
+            searchText2.style.display = "block";
+        });
+
+        orNot.addEventListener("click", () => {
+            searchText2.style.display = "block";
+        });
+
+        search.addEventListener("click", () => {
+            searchText2.style.display = "none";
+        });
+    </script>
+</body>
+</html>

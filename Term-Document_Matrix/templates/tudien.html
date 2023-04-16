@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Word Count</title>
+  </head>
+  <body>
+    <h1>Từ điển</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Upload Folder</a></li>
+        <li><a href="{{ url_for('search') }}">Search</a></li>
+        <li><a href="{{ url_for('tudien') }}">Dict</a></li>
+      </ul>
+    </nav>
+      <p>{{file_count}}</p>
+    </form>
+
+    
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search</title>
+  </head>
+  <body>
+    <h1>Search</h1>
+    <form method="post">
+      <label for="query">Search for:</label>
+      <input type="text" name="query" id="query" required value="{{ query }}">
+      <button type="submit">Search</button>
+    </form>
+    {% if words %}
+      <h2>Results</h2>
+      <ul>
+        {% for word in words %}
+          <li>{{ word }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </body>
+</html>

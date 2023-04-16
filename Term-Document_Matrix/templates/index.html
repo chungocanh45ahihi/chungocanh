@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Count Words</title>
+  </head>
+  <body>
+    <h1>Upload Folder</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Upload Folder</a></li>
+        <li><a href="{{ url_for('search') }}">Search</a></li>
+        <li><a href="{{ url_for('tudien') }}">Dict</a></li>
+      </ul>
+    </nav>
+    <form action="/tudien" method="post" enctype="multipart/form-data">
+      <input type="file" id="folder" name="file" webkitdirectory directory multiple>
+      <input type="submit" value="Count Words">
+    </form>
+  </body>
+</html>

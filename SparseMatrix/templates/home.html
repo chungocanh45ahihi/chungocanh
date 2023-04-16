@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Word List</title>
+  </head>
+  <body>
+    <h1>Word List</h1>
+    <ul>
+      {% for word in words %}
+        <li>{{ word }}</li>
+      {% endfor %}
+    </ul>
+    <h2>Add Word</h2>
+    <form method="post">
+      <label for="word">Word:</label>
+      <input type="text" name="word" id="word" required>
+      <button type="submit">Add</button>
+    </form>
+  </body>
+</html>
